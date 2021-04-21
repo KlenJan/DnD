@@ -1,5 +1,5 @@
 # Foundry VTT D&D 5e
-paladin dnd macros with some animations and sound effects - customized for me, so you need to replace stuff you're not gonna use
+paladin dnd macros with some animations and sound effects - customized for me, so you need to replace stuff you're not gonna use (for example divine sense just checks for visibility, because I am playing reborn that has darkvision, if you can't see as far as 60ft you refactor the code a bit)
 
 replace sounds files with your own or just comment out the lines that use them as well as animations
 
