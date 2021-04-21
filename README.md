@@ -1,7 +1,5 @@
 # Foundry VTT D&D 5e
-paladin dnd macros with some animations and sound effects - customized for me, so you need to replace stuff you're not gonna use
-
-for animations you need fxmaster, automated animation and tokenmagicfx, most animations are done through interface, only lay on hands uses fxmaster
+paladin dnd macros with some animations and sound effects - customized for me, so you need to replace stuff you're not gonna use (for example divine sense just checks for visibility, because I am playing reborn that has darkvision, if you can't see as far as 60ft you need to refactor the code a bit => extend the condition to calculate and check whether there are some other creatures within 60ft or consult with your DM)
 
 replace sounds files with your own or just comment out the lines that use them as well as animations
 
@@ -15,4 +13,23 @@ List of abilities:
 
 You can drag whatever ability to your action bar and then right click it to edit
 
-Also check out https://foundryvtt.com/api/ for more resources
+# Examples:
+
+- generic attack https://streamable.com/jfbezy
+
+- lay on hands https://streamable.com/km8qy8
+
+- divine sense https://streamable.com/gaodly
+
+- knowledge from past life https://streamable.com/k9w8me
+
+# Resources used
+
+https://github.com/foundry-vtt-community/macros
+
+https://foundryvtt.com/api/
+
+fxmaster,
+jb2e,
+tokenmagicgx,
+automated animation
