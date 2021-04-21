@@ -1,5 +1,5 @@
 # Foundry VTT D&D 5e
-paladin dnd macros with some animations and sound effects - customized for me, so you need to replace stuff you're not gonna use (for example divine sense just checks for visibility, because I am playing reborn that has darkvision, if you can't see as far as 60ft you need to refactor the code a bit)
+paladin dnd macros with some animations and sound effects - customized for me, so you need to replace stuff you're not gonna use (for example divine sense just checks for visibility, because I am playing reborn that has darkvision, if you can't see as far as 60ft you need to refactor the code a bit => extend the condition to calculate and check whether there are some other creatures within 60ft or consult with your DM)
 
 replace sounds files with your own or just comment out the lines that use them as well as animations
 
