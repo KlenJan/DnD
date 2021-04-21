@@ -13,6 +13,16 @@ List of abilities:
 
 You can drag whatever ability to your action bar and then right click it to edit
 
+# Examples:
+
+- generic attack https://streamable.com/jfbezy
+
+- lay on hands https://streamable.com/km8qy8
+
+- divine sense https://streamable.com/gaodly
+
+- knowledge from past life https://streamable.com/k9w8me
+
 # Resources used
 
 https://github.com/foundry-vtt-community/macros
