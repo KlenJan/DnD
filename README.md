@@ -5,6 +5,12 @@ for animations you need fxmaster, automated animation and tokenmagicfx, most ani
 
 replace sounds files with your own
 
+List of abilities:
+ - Lay On Hands
+ - Divine Sense
+ - Knowledge From Past Life (Reborn trait)
+ - generic attack scripts
+
 # How to create and edit macros
 
 You can drag whatever ability to your action bar and then right click it to edit
