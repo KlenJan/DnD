@@ -19,7 +19,7 @@ function attacksound(choiceVar) {
     let textArray = [
         "For justice!",
         `Justice demands retribution!`,
-        "Fall by my hand!.",
+        "Fall by my hand!",
         "You must obey!",
         
     ]
