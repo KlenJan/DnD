@@ -3,6 +3,16 @@ paladin dnd macros with some animations and sound effects - customized for me, s
 
 for animations you need fxmaster, automated animation and tokenmagicfx, most animations are done through interface, only lay on hands uses fxmaster
 
-replace sounds files with your own
+replace sounds files with your own or just comment out the lines that use them as well as animations
 
+List of abilities:
+ - Lay On Hands
+ - Divine Sense
+ - Knowledge From Past Life (Reborn trait)
+ - generic attack scripts
 
+# How to create and edit macros
+
+You can drag whatever ability to your action bar and then right click it to edit
+
+Also check out https://foundryvtt.com/api/ for more resources
