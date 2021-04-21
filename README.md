@@ -8,4 +8,5 @@ replace sounds files with your own
 # How to create and edit macros
 
 You can drag whatever ability to your action bar and then right click it to edit
+
 Also check out https://foundryvtt.com/api/ for more resources
