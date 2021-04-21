@@ -18,7 +18,7 @@ let senseSuccessMix = [
 ]
 
 let senseFail = [
-    "My sense have failed me.",
+    "My senses have failed me.",
     "I feel nothing.",
     "Light is absent."
 ]
