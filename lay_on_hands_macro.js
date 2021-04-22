@@ -1,10 +1,11 @@
 let lay_on_hands_heal = function () {
 
     let confirmed = false;
-    let tokenData = token;
-    let actorData = actor || canvas.tokens.controlled[0] || game.user.character;
+    let tokenData = canvas.tokens.controlled[0]
+    let actorData = actor || canvas.tokens.controlled[0].actor || game.user.character;
     let featData = actorData ? actorData.items.find(i => i.name === "Lay on Hands") : null;
     let featUpdate = duplicate(featData);
+    let targetToken = game.user.targets.values().next().value;
     let targetActor = game.user.targets.values().next().value.actor;
     let maxHeal = Math.clamped(featUpdate.data.uses.value, 0,
         targetActor.data.data.attributes.hp.max - targetActor.data.data.attributes.hp.value);
@@ -70,7 +71,6 @@ let lay_on_hands_heal = function () {
                     let flavor = `<strong>${textArray[choice]}</strong><br>`
 
                     if (targetActor.permission !== CONST.ENTITY_PERMISSIONS.OWNER) {
-                        // We need help applying the healing, so make a roll message for right-click convenience.
                         let creatureStart = targetActor.data.name.indexOf("(")
                         let creatureEnd = targetActor.data.name.indexOf(")")
                         let realActorName = targetActor.data.name
@@ -81,11 +81,12 @@ let lay_on_hands_heal = function () {
                             speaker: ChatMessage.getSpeaker(),
                             content: `${flavor}`
                         }, { chatBubble: true });
-                        new Roll(`${number}`).roll().toMessage({
+                        ChatMessage.create({
                             speaker: ChatMessage.getSpeaker(),
-                            flavor: `${actorData.name} lays hands on ${realActorName}.<br>
-                                     <p><br><em>Manually apply ${number} HP of healing to ${realActorName}</em></p>`
+                            content: `${actorData.name} lays hands on ${targetActor.data.name} for ${number} HP.`
                         });
+                        let damageRoll = new Roll(`${number}`).roll();                    
+                            new MidiQOL.DamageOnlyWorkflow(actorData, tokenData, damageRoll.total, "healing", [targetToken], damageRoll, { flavor: `(Healing)`, itemCardId: tokenData.itemCardId });
                         choice = getRandomInt(2)
                         AudioHelper.play({ src: `uploads/sounds/HolyLight${soundChoiceDefault + 1}.wav`, volume: 0.8, autoplay: true, loop: false }, true);
                         var_anim_heal()
@@ -94,7 +95,6 @@ let lay_on_hands_heal = function () {
 
                     }
                     else {
-                        // We can apply healing automatically, so just show a normal chat message.
                         ChatMessage.create({
                             speaker: ChatMessage.getSpeaker(),
                             content: `${flavor}`
@@ -203,6 +203,10 @@ let lay_on_hands_cure = function (ailmentType) {
         actorData.updateEmbeddedEntity("OwnedItem", featUpdate);
     };
 
+}
+
+let getAilments = function () {
+    
 }
 
 let lay_on_hands_cure_ailment = function () {
