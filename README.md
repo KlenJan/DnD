@@ -17,7 +17,6 @@ TODO soon:
  - Lay on Hands => add support for Active Effects (Poison, Disease) removal using callback macros executes as GM, remove extra input window
  - Divine Sense => add flexibility for all vision ranges and check for collision if not within sight but still within 60ft
  - Knowledge From Past Life - Add automatic roll
- - 
 
 # How to create and edit macros
 
