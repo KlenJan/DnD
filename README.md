@@ -20,7 +20,7 @@ TODO soon:
 
 # How to create and edit macros
 
-You can drag whatever ability to your action bar and then right click it to edit, for some actions you require macros to be executed as DM. For example removing of conditions such as poison or disease. See crymic's repository listed in resources, namely callback macros and README.md file. It is explained what gm has to do and how it works.
+You can drag whatever ability to your action bar and then right click it to edit, for some actions you require macros to be executed as DM. For example removing of conditions such as poison or disease. See crymic's repository listed in resources, namely callback macros and README.md file. It is explained what DM has to do and how it works.
 
 # Examples:
 
