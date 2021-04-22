@@ -1,5 +1,5 @@
 # Foundry VTT D&D 5e
-paladin dnd macros with some animations and sound effects - customized for me, so you need to replace stuff you're not gonna use (for example divine sense just checks for visibility, because I am playing reborn that has darkvision, if you can't see as far as 60ft you need to refactor the code a bit => extend the condition to calculate and check whether there are some other creatures within 60ft or consult with your DM)
+Paladin dnd macros with some animations and sound effects 
 
 replace sounds files with your own or just comment out the lines that use them as well as animations
 
@@ -8,6 +8,16 @@ List of abilities:
  - Divine Sense
  - Knowledge From Past Life (Reborn trait)
  - generic attack scripts
+
+Backlog:
+ - Divine Smite
+ - some of 1st spell slot level spells
+
+TODO soon:
+ - Lay on Hands => add support for Active Effects (Poison, Disease) removal using callback macros executes as GM, remove extra input window
+ - Divine Sense => add flexibility for all vision ranges and check for collision if not within sight but still within 60ft
+ - Knowledge From Past Life - Add automatic roll
+ - 
 
 # How to create and edit macros
 
@@ -26,11 +36,11 @@ You can drag whatever ability to your action bar and then right click it to edit
 # Resources used
 
 https://github.com/foundry-vtt-community/macros
-
+https://gitlab.com/crymic/foundry-vtt-macros/-/tree/master/  - make sure to check these out if you are interested in other classes
 https://foundryvtt.com/api/
 
 fxmaster,
 jb2e,
 tokenmagicgx,
 automated animation,
-midiqol
+midiqol, dae
