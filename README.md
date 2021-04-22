@@ -32,4 +32,5 @@ https://foundryvtt.com/api/
 fxmaster,
 jb2e,
 tokenmagicgx,
-automated animation
+automated animation,
+midiqol
