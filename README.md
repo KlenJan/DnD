@@ -34,9 +34,9 @@ You can drag whatever ability to your action bar and then right click it to edit
 
 # Resources used
 
-https://github.com/foundry-vtt-community/macros
-https://gitlab.com/crymic/foundry-vtt-macros/-/tree/master/  - make sure to check these out if you are interested in other classes
-https://foundryvtt.com/api/
+- https://github.com/foundry-vtt-community/macros
+- https://gitlab.com/crymic/foundry-vtt-macros/-/tree/master/  - make sure to check these out if you are interested in other classes
+- https://foundryvtt.com/api/
 
 fxmaster,
 jb2e,
