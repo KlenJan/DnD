@@ -410,5 +410,4 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-game.dnd5e.rollItemMacro("Lay on Hands");
 lay_on_hands_main()
