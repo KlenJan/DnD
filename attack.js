@@ -123,6 +123,21 @@ async function attackMain(weaponUsed) {
         ui.notifications.error('You must target at least one token');
         return
     }
+
+    if (game.user.targets.values().next().value.actor.data.data.attributes.hp.value === 0) {
+        let textArrayTargetDead = [
+            "My steel is no longer needed here.",
+            "I can't attack something that's already dead...",
+            "This one has seen better days."
+        ]
+        AudioHelper.play({ src: `uploads/sounds/Error1.ogg`, volume: 0.8, autoplay: true, loop: false }, true);
+        ChatMessage.create({
+            speaker: ChatMessage.getSpeaker(),
+            content: `${textArrayTargetDead[getRandomInt(3)]}`
+        }, { chatBubble: true });
+        return
+    }
+
     game.dnd5e.rollItemMacro(weaponUsed);
     Hooks.once("midi-qol.RollComplete", (workflow) => { attackAction(workflow) })
 }
