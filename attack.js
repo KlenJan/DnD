@@ -19,7 +19,8 @@ async function attackAction(rollWorkflow) {
         "You must obey!",
     ]
     let textArrayFail = [
-        "I loathe mistakes!"
+        "I loathe mistakes!",
+        "A blunder."
     ]
 
     if (rollWorkflow.hasOwnProperty("damageTotal")) {
@@ -44,10 +45,11 @@ async function attackAction(rollWorkflow) {
 
     }
     else {
-        usedText = textArrayFail[0]
+        let choiceFail = getRandomInt(2)
+        usedText = textArrayFail[choiceFail]
         animAttack("modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "Mace01_01_Regular_White_800x600.webm", 1, 1, 0.45, 0.45)
         await new Promise(r => setTimeout(r, 1500));
-        AudioHelper.play({ src: `uploads/sounds/HitMiss.wav`, volume: 0.8, autoplay: true, loop: false }, true);
+        AudioHelper.play({ src: `uploads/sounds/HitMiss${choiceFail+1}.wav`, volume: 0.8, autoplay: true, loop: false }, true);
         ChatMessage.create({
             speaker: ChatMessage.getSpeaker(),
             content: `${usedText}`
