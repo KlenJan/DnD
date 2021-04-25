@@ -39,16 +39,18 @@ async function attackAction(rollWorkflow, targetToken) {
         animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "Mace01_Fire_Regular_Yellow_800x600.webm", 1, 1, 0.625, 0.5)
         await new Promise(r => setTimeout(r, 1000));
         AudioHelper.play({ src: "uploads/sounds/HolyAttack.ogg", volume: 0.8, autoplay: true, loop: false }, true);
-        animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "DmgBludgeoning_01_Regular_Yellow_1Handed_800x600.webm", 1, 1, 0.625, 0.5)
+        animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "DmgBludgeoning_01_Regular_Yellow_2Handed_800x600.webm", 1, 1, 0.625, 0.5)
         await new Promise(r => setTimeout(r, 500));
-        animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Explosion/", "Explosion_02_Yellow_400x400.webm")
+        animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Explosion/", "Explosion_02_Yellow_400x400.webm", 0.6, 0.6)
 
     }
     else {
         let choiceFail = getRandomInt(2)
         usedText = textArrayFail[choiceFail]
         animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "Mace01_01_Regular_White_800x600.webm", 1, 1, 0.45, 0.45)
-        await new Promise(r => setTimeout(r, 1500));
+        await new Promise(r => setTimeout(r, 1000));
+        animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "DmgBludgeoning_01_Regular_Yellow_1Handed_800x600.webm", 1, 1, 0.45, 0.45)
+        await new Promise(r => setTimeout(r, 500));
         AudioHelper.play({ src: `uploads/sounds/HitMiss${choiceFail + 1}.wav`, volume: 0.8, autoplay: true, loop: false }, true);
         ChatMessage.create({
             speaker: ChatMessage.getSpeaker(),
