@@ -7,7 +7,7 @@ List of abilities:
  - Lay On Hands
  - Divine Sense
  - Knowledge From Past Life (Reborn trait)
- - generic attack scripts
+ - generic attack scripts (UPDATE: animations are now synced with sounds, reworked the whole logic using hooks)
 
 Backlog:
  - Divine Smite
