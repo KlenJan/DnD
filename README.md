@@ -38,10 +38,11 @@ You can drag whatever ability to your action bar and then right click it to edit
 - https://gitlab.com/crymic/foundry-vtt-macros/-/tree/master/  - make sure to check these out if you are interested in other classes
 - https://foundryvtt.com/api/
 
-fxmaster,
-jb2e,
-tokenmagicgx,
-automated animation,
-midiqol,
-dae,
-the furnace
+Modules:
+- fxmaster,
+- jb2e,
+- tokenmagicgx,
+- automated animation,
+- midiqol,
+- dae,
+- the furnace
