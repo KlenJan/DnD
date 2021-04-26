@@ -41,7 +41,7 @@ You can drag whatever ability to your action bar and then right click it to edit
 Modules:
 - fxmaster,
 - jb2e,
-- tokenmagicgx,
+- tokenmagicfx,
 - automated animation,
 - midiqol,
 - dae,
