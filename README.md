@@ -14,7 +14,7 @@ Backlog:
  - some of 1st spell slot level spells
 
 TODO soon:
- - -Lay on Hands => add support for Active Effects (Poison, Disease) removal using callback macros executed as DM, remove extra input window-
+ - DONE ~~Lay on Hands => add support for Active Effects (Poison, Disease) removal using callback macros executed as DM, remove extra input window~~
  - Divine Sense => add flexibility for all vision ranges and check for collision if not within sight but still within 60ft
  - Knowledge From Past Life - Add automatic roll
 
