@@ -35,12 +35,12 @@ async function attackAction(rollWorkflow, targetToken) {
             speaker: ChatMessage.getSpeaker(),
             content: `${usedText}`
         }, { chatBubble: true });
-        await new Promise(r => setTimeout(r, 1000));
+        await new Promise(r => setTimeout(r, 1250));
         animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "Mace01_Fire_Regular_Yellow_800x600.webm", 1, 1, 0.625, 0.5)
         await new Promise(r => setTimeout(r, 1000));
         AudioHelper.play({ src: "uploads/sounds/HolyAttack.ogg", volume: 0.8, autoplay: true, loop: false }, true);
         animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "DmgBludgeoning_01_Regular_Yellow_2Handed_800x600.webm", 1, 1, 0.625, 0.5)
-        await new Promise(r => setTimeout(r, 500));
+        await new Promise(r => setTimeout(r, 250));
         animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Explosion/", "Explosion_02_Yellow_400x400.webm", 0.6, 0.6)
 
     }

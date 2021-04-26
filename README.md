@@ -42,4 +42,6 @@ fxmaster,
 jb2e,
 tokenmagicgx,
 automated animation,
-midiqol, dae
+midiqol,
+dae,
+the furnace
