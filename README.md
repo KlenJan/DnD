@@ -4,7 +4,7 @@ Paladin dnd macros with some animations and sound effects
 replace sounds files with your own or just comment out the lines that use them as well as animations
 
 List of abilities:
- - Lay On Hands
+ - Lay On Hands (UPDATE: refactored the code, now you can remove conditions using with the help of your GM, see lay on hands folder README.md)
  - Divine Sense
  - Knowledge From Past Life (Reborn trait)
  - generic attack scripts (UPDATE: animations are now synced with sounds, reworked the whole logic using hooks)
@@ -14,7 +14,7 @@ Backlog:
  - some of 1st spell slot level spells
 
 TODO soon:
- - Lay on Hands => add support for Active Effects (Poison, Disease) removal using callback macros executed as DM, remove extra input window
+ - -Lay on Hands => add support for Active Effects (Poison, Disease) removal using callback macros executed as DM, remove extra input window-
  - Divine Sense => add flexibility for all vision ranges and check for collision if not within sight but still within 60ft
  - Knowledge From Past Life - Add automatic roll
 
