@@ -69,9 +69,6 @@ let animAttack = function (targetToken, folder, animType, scaleX = 1, scaleY = 1
     //If it has the exact same name as the spell or item you want to trigger it from, you'll encounter an issue.
     //anFile is the name of the file used for the animation
     let anFile = `${folder}${animType}`;
-    //another example would be:
-    //let folder01 = "modules/jb2a_patreon/Library/Generic/Healing/"
-    //let anFile = `${folder01}HealingAbility_01_Green_200x200.webm`;
     ///Check if Module dependencies are installed or returns an error to the user
     if (!canvas.fxmaster) ui.notifications.error("This macro depends on the FXMaster module. Make sure it is installed and enabled");
     if (game.user.targets.size == 0) {
