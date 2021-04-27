@@ -10,13 +10,13 @@ List of abilities:
  - generic attack scripts (UPDATE: animations are now synced with sounds, reworked the whole logic using hooks)
 
 Backlog:
- - Divine Smite
  - some of 1st spell slot level spells
 
 TODO soon:
  - DONE ~~Lay on Hands => add support for Active Effects (Poison, Disease) removal using callback macros executed as DM, remove extra input window~~
- - Divine Sense => add flexibility for all vision ranges and check for collision if not within sight but still within 60ft
- - Knowledge From Past Life - Add automatic roll
+ - DONE ~~Divine Sense => add flexibility for all vision ranges and check for collision if not within sight but still within 60ft~~
+ - DONE ~~Knowledge From Past Life - Add automatic roll~~
+ - Divine Smite
 
 # How to create and edit macros
 
