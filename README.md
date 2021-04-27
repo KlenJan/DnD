@@ -45,4 +45,5 @@ Modules:
 - automated animation,
 - midiqol,
 - dae,
-- the furnace
+- the furnace,
+- combat utility belt (cub)
