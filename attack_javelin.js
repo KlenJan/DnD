@@ -35,7 +35,7 @@ async function attackAction(rollWorkflow, targetToken) {
             content: `${usedText}`
         }, { chatBubble: true });
         await new Promise(r => setTimeout(r, 1500));
-        animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Ranged/", "Javelin01_01_Regular_White_30ft_1600x400.webm", 1, 1, 0.475, 0.5)
+        animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Ranged/", "Javelin01_01_Regular_White_30ft_1600x400.webm", 1, 1, 0.875, 0.5)
         await new Promise(r => setTimeout(r, 500));
         AudioHelper.play({ src: "uploads/sounds/HolyDamage.ogg", volume: 0.4, autoplay: true, loop: false }, true);
         animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "DmgSlashing_01_Regular_Yellow_2Handed_800x600.webm", 1, 1, 0.625, 0.5)
@@ -44,7 +44,7 @@ async function attackAction(rollWorkflow, targetToken) {
     else {
         let choiceFail = getRandomInt(2)
         usedText = textArrayFail[choiceFail]
-        animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Ranged/", "Javelin01_01_Regular_White_30ft_1600x400.webm", 1, 1, 0.475, 0.475)
+        animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Ranged/", "Javelin01_01_Regular_White_30ft_1600x400.webm", 1, 1, 0.875, 0.875)
         await new Promise(r => setTimeout(r, 500));
         animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "DmgSlashing_01_Regular_Yellow_1Handed_800x600.webm", 1, 1, 0.625, 0.75)
         await new Promise(r => setTimeout(r, 1000));
