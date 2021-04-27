@@ -26,10 +26,10 @@ async function attackAction(rollWorkflow, targetToken) {
     if (rollWorkflow.hasOwnProperty("damageTotal")) {
         usedText = textArraySuccess[choice]
         if (choice > 1) {
-            AudioHelper.play({ src: `uploads/sounds/Attack${choice + 1}.wav`, volume: 0.8, autoplay: true, loop: false }, true);
+            AudioHelper.play({ src: `uploads/sounds/Attack${choice + 1}.wav`, volume: 0.4, autoplay: true, loop: false }, true);
         }
         else {
-            AudioHelper.play({ src: `uploads/sounds/Attack${choice + 1}.ogg`, volume: 0.8, autoplay: true, loop: false }, true);
+            AudioHelper.play({ src: `uploads/sounds/Attack${choice + 1}.ogg`, volume: 0.4, autoplay: true, loop: false }, true);
         }
         ChatMessage.create({
             speaker: ChatMessage.getSpeaker(),
@@ -38,7 +38,7 @@ async function attackAction(rollWorkflow, targetToken) {
         await new Promise(r => setTimeout(r, 1250));
         animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "Mace01_Fire_Regular_Yellow_800x600.webm", 1, 1, 0.625, 0.5)
         await new Promise(r => setTimeout(r, 1000));
-        AudioHelper.play({ src: "uploads/sounds/HolyAttack.ogg", volume: 0.8, autoplay: true, loop: false }, true);
+        AudioHelper.play({ src: "uploads/sounds/HolyAttack.ogg", volume: 0.4, autoplay: true, loop: false }, true);
         animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "DmgBludgeoning_01_Regular_Yellow_2Handed_800x600.webm", 1, 1, 0.625, 0.5)
         await new Promise(r => setTimeout(r, 250));
         animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Explosion/", "Explosion_02_Yellow_400x400.webm", 0.6, 0.6)
@@ -51,7 +51,7 @@ async function attackAction(rollWorkflow, targetToken) {
         await new Promise(r => setTimeout(r, 1000));
         animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "DmgBludgeoning_01_Regular_Yellow_1Handed_800x600.webm", 1, 1, 0.45, 0.45)
         await new Promise(r => setTimeout(r, 500));
-        AudioHelper.play({ src: `uploads/sounds/HitMiss${choiceFail + 1}.wav`, volume: 0.8, autoplay: true, loop: false }, true);
+        AudioHelper.play({ src: `uploads/sounds/HitMiss${choiceFail + 1}.wav`, volume: 0.4, autoplay: true, loop: false }, true);
         ChatMessage.create({
             speaker: ChatMessage.getSpeaker(),
             content: `${usedText}`
@@ -129,7 +129,7 @@ async function attackMain(weaponUsed) {
             "I can't attack something that's already dead...",
             "This one has seen better days."
         ]
-        AudioHelper.play({ src: `uploads/sounds/Error1.ogg`, volume: 0.8, autoplay: true, loop: false }, true);
+        AudioHelper.play({ src: `uploads/sounds/Error1.ogg`, volume: 0.4, autoplay: true, loop: false }, true);
         ChatMessage.create({
             speaker: ChatMessage.getSpeaker(),
             content: `${textArrayTargetDead[getRandomInt(3)]}`

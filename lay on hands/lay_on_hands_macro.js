@@ -88,6 +88,26 @@ async function lay_on_hands_heal_window(realActorName) {
         ui.notifications.warn(`Please target one token.`);
         return
     }
+
+    ChatMessage.create({
+        speaker: ChatMessage.getSpeaker(),
+        content: `<div class="dnd5e chat-card item-card midi-qol-item-card" data-actor-id="Ldir6oZMHQVXWajj" data-item-id="ck5BrbhhuvJTXhas">
+        <header class="card-header flexrow">
+          <img src="systems/dnd5e/icons/skills/light_10.jpg" title="Lay on Hands" width="36" height="36">
+          <h3 class="item-name">Lay on Hands</h3>
+        </header>
+        <div class="card-content">
+          <div class="rd__b  rd__b--3"><p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level × 5.</p><div class="rd__spc-inline-post"></div><p>As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</p><p>Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.</p><p>This feature has no effect on undead and constructs.</p></div>
+        </div>  
+        <footer class="card-footer">
+          <span>Paladin 1</span>
+          <span>1 Action (Target cannot be Undead or a Construct.)</span>
+          <span>1 Creature</span>
+          <span>Touch</span>
+        </footer>
+      </div>`
+    });
+
     new Dialog({
         title: "Lay on Hands Healing",
         content: content,
