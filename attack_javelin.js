@@ -32,7 +32,7 @@ async function attackAction(rollWorkflow, targetToken) {
         }
         ChatMessage.create({
             speaker: ChatMessage.getSpeaker(),
-            content: `${usedText}`
+            content: `<strong>${usedText}</strong><br>`
         }, { chatBubble: true });
         await new Promise(r => setTimeout(r, 1500));
         animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Ranged/", "Javelin01_01_Regular_White_30ft_1600x400.webm", 1, 1, 0.875, 0.5)
@@ -51,7 +51,7 @@ async function attackAction(rollWorkflow, targetToken) {
         AudioHelper.play({ src: `uploads/sounds/HitMiss${choiceFail + 1}.wav`, volume: 0.4, autoplay: true, loop: false }, true);
         ChatMessage.create({
             speaker: ChatMessage.getSpeaker(),
-            content: `${usedText}`
+            content: `<strong>${usedText}</strong><br>`
         }, { chatBubble: true });
     }
 
@@ -132,7 +132,7 @@ async function attackMain(weaponUsed) {
         AudioHelper.play({ src: `uploads/sounds/Error1.ogg`, volume: 0.4, autoplay: true, loop: false }, true);
         ChatMessage.create({
             speaker: ChatMessage.getSpeaker(),
-            content: `${textArrayTargetDead[getRandomInt(3)]}`
+            content: `<strong>${textArrayTargetDead[getRandomInt(3)]}</strong><br>`
         }, { chatBubble: true });
         return
     }

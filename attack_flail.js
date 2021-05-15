@@ -33,7 +33,7 @@ async function attackAction(rollWorkflow, targetToken) {
         }
         ChatMessage.create({
             speaker: ChatMessage.getSpeaker(),
-            content: `${usedText}`
+            content: `<strong>${usedText}</strong><br>`
         }, { chatBubble: true });
         await new Promise(r => setTimeout(r, 1250));
         animAttack(targetToken, "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/", "Mace01_Fire_Regular_Yellow_800x600.webm", 1, 1, 0.625, 0.5)
@@ -54,7 +54,7 @@ async function attackAction(rollWorkflow, targetToken) {
         AudioHelper.play({ src: `uploads/sounds/HitMiss${choiceFail + 1}.wav`, volume: 0.4, autoplay: true, loop: false }, true);
         ChatMessage.create({
             speaker: ChatMessage.getSpeaker(),
-            content: `${usedText}`
+            content: `<strong>${usedText}</strong><br>`
         }, { chatBubble: true });
     }
 
@@ -132,7 +132,7 @@ async function attackMain(weaponUsed) {
         AudioHelper.play({ src: `uploads/sounds/Error1.ogg`, volume: 0.4, autoplay: true, loop: false }, true);
         ChatMessage.create({
             speaker: ChatMessage.getSpeaker(),
-            content: `${textArrayTargetDead[getRandomInt(3)]}`
+            content: `<strong>${textArrayTargetDead[getRandomInt(3)]}</strong><br>`
         }, { chatBubble: true });
         return
     }

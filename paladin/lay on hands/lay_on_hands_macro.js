@@ -170,7 +170,7 @@ async function lay_on_hands_heal_window(realActorName) {
 
                     ChatMessage.create({
                         speaker: ChatMessage.getSpeaker(),
-                        content: `${actorData.name} lays hands on ${realActorName} for ${number} HP.`
+                        content: `<em>${actorData.name} lays hands on ${realActorName} for ${number} HP.</em>`
                     });
                     heal_anim_sound_play(soundChoiceDefault)
 
