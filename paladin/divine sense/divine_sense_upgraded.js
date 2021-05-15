@@ -114,7 +114,7 @@ async function divine_sense() {
         AudioHelper.play({ src: `uploads/sounds/Error1.ogg`, volume: 0.3, autoplay: true, loop: false }, true);
         ChatMessage.create({
             speaker: ChatMessage.getSpeaker(),
-            content: `${textArrayCant[getRandomInt(3)]}`
+            content: `<strong>${textArrayCant[getRandomInt(3)]}</strong><br>`
         }, { chatBubble: true });
         return
     }

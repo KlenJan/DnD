@@ -53,7 +53,7 @@ async function knowledge() {
     let actorData = game.user.character;
     let featData = actorData ? actorData.items.find(i => i.name === "Knowledge from a Past Life") : null;
     let featUpdate = duplicate(featData);
-    let flavor = "Hope."
+    let flavor = "Hope.";
     let abilityDesc = `<div class="dnd5e chat-card item-card midi-qol-item-card" data-actor-id="Ldir6oZMHQVXWajj" data-item-id="aPRS71APm0MuyqZM">
   
 <header class="card-header flexrow">
@@ -83,7 +83,7 @@ async function knowledge() {
         AudioHelper.play({ src: `uploads/sounds/Error1.ogg`, volume: 0.3, autoplay: true, loop: false }, true);
         ChatMessage.create({
             speaker: ChatMessage.getSpeaker(),
-            content: `${textArrayCant[getRandomInt(3)]}`
+            content: `<strong>${textArrayCant[getRandomInt(3)]}</strong><br>`
         }, { chatBubble: true });
         return
     }
@@ -93,12 +93,12 @@ async function knowledge() {
 
     ChatMessage.create({
         speaker: ChatMessage.getSpeaker(),
-        content: `${flavor}`
+        content: `<strong>${flavor}<strong><br>`
     }, { chatBubble: true });
 
     AudioHelper.play({ src: `uploads/sounds/Hou.wav`, volume: 0.4, autoplay: true, loop: false }, true);
     await new Promise(r => setTimeout(r, 1750));
-    animAction(tokenData, "modules/jb2a_patreon/Library/5th_Level/Antilife_Shell/", "Antilifeshell_01_Blue_Circle_400x400.webm", 0.75, 0.75)
+    animAction(tokenData, "modules/jb2a_patreon/Library/3rd_Level/Spirit_Guardians/", "SpiritGuardians_01_Dark_WhiteBlue_600x600.webm", 0.75, 0.75)
     AudioHelper.play({ src: `uploads/sounds/Knowledge.wav`, volume: 0.4, autoplay: true, loop: false }, true);
 
 }
