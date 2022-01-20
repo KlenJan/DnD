@@ -1,3 +1,5 @@
+# EDIT AS OF 20.1.2022 Most of this is now probably outdated/integrated with other plugins but I will leave it up anyway if someone wants to have a look :)
+
 # Foundry VTT D&D 5e
 Paladin dnd macros with some animations and sound effects 
 
